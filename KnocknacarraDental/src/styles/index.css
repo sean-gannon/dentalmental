@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Global styles for the application */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-mandatory > * {
+  scroll-snap-align: start;
+}
